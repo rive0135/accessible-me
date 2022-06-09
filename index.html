@@ -13,7 +13,13 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="skip-container">
+    <ul class="skip-links">
+      <li><a href="#main-content">Skip to main content</a></li>
+      <li><a href="#contact-section">Skip to contact section</a></li>
+    </ul>
+  </div>
+  <div class="container" id="container">
     <div class="site-header">
       <h1>Jam Box Studios</h1>
       <div class="main-nav">
@@ -26,7 +32,7 @@
       </div>
       <img src="https://placekitten.com/1200/900" class="banner">
     </div>
-    <div class="main-content">
+    <div class="main-content" id="main-content">
       <h1>Welcome to Jam Box</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
@@ -46,17 +52,20 @@
           B3T 0L0
         </p>
       </div>
-      <div class="contact-section">
+      <div class="contact-section" id="contact-section">
         <h1>Contact Us</h1>
         <form action="thanks.html">
           <label>Full Name</label>
           <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
+          <input type="email" placeholder="Email">
+          <input type="subject" placeholder="Subject">
           <b>Your Message</b>
           <textarea></textarea>
           <button type="submit">Send</button>
         </form>
+      </div>
+      <div class="skip-button">
+        <div><a href="#container">Back to Top</a></div>
       </div>
     </div>
     <div class="site-footer">
